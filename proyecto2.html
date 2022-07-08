@@ -5,51 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
 <body>
-  <h1>Lista de Supermercado</h1>
-    <div>
+  <h1 class="text-center mb-2">Lista de Supermercado</h1>
+    <div class="container">
         <!-- Empiezan entradas de texto -->
-        <form>
-        <div>
-          <label>Producto</label>
+        <form id="enviarFormato">
+        <div class="mb-2">
+          <label class="form-label">Producto</label>
           <div>
-            <input>
+            <input class="form-control" id="inputProducto">
+          </div>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Cantidad</label>
+          <div>
+            <input class="form-control" id="inputCantidad">
           </div>
         </div>
         
-        <div>
-          <label>Cantidad</label>
-          <div>
-            <input>
-          </div>
-        </div>
-        
-        <div>
-            <label>Establecimiento</label>
+        <div class="mb-3">
+            <label class="form-label">Establecimiento</label>
             <div>
-              <input>
+              <input class="form-control" id="inputEstablecimiento">
             </div>
         </div >
-            <button>Agregar a lista</button>
+            <button class="mb-3 btn btn-success"type="submit">Agregar a lista</button>
         </form>
         <!-- Empieza tabla -->
         <div>
-        <table>
+        <table class="table table-hover" id="tabla">
           <thead>
           <tr>
-            <th>#</th>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Establecimiento</th>
-            <th></th>
-            <th></th>
+            <th scope="col">#</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Establecimiento</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
           </tr>
           </thead>
-          <tbody>
+          <tbody id="tabla-body">
           </tbody>
         </table>
         </div>
     </div>  
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="proyecto2.js"></script>
 </body>
 </html>
